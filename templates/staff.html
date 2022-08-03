@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Hospital | Database</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class='bx bx-plus-medical icon'></i>
+          <div class="logo_name">MY Hospital</div>
+          <i class='bx bx-menu' id="btn" ></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="../index.html">
+            <i class='bx bx-grid-alt'></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+           <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+         <a href="/templates/staff.html">
+          <i class='bx bxs-user-rectangle' ></i>
+           <span class="links_name">Staff</span>
+         </a>
+         <span class="tooltip">Staff</span>
+       </li>
+       <li>
+         <a href="/templates/patients.html">
+          <i class='bx bxs-user' ></i>
+           <span class="links_name">Patients</span>
+         </a>
+         <span class="tooltip">Patients</span>
+       </li>
+       <li>
+         <a href="/templates/rooms.html">
+          <i class='bx bx-home-alt'></i>
+           <span class="links_name">Rooms</span>
+         </a>
+         <span class="tooltip">Rooms</span>
+       </li>
+       <li>
+         <a href="/templates/medicine.html">
+          <i class='bx bxs-capsule' ></i>
+           <span class="links_name">Medicines</span>
+         </a>
+         <span class="tooltip">Medicines</span>
+       </li>
+       <li>
+         <a href="/templates/reports.html">
+          <i class='bx bxs-report' ></i>
+           <span class="links_name">Reports</span>
+         </a>
+         <span class="tooltip">Reports</span>
+       </li>
+       <li>
+         <a href="/templates/bills.html">
+          <i class='bx bxs-wallet' ></i>
+           <span class="links_name">Bills</span>
+         </a>
+         <span class="tooltip">Bills</span>
+       </li>
+       <li class="profile">
+           <div class="profile-details">
+             <div class="name_job">
+               <div class="name">User ID</div>
+               <div class="job">Records</div>
+             </div>
+           </div>
+           <i class='bx bx-log-out' id="log_out" ></i>
+       </li>
+      </ul>
+    </div>
+
+        <!-- Home -->
+    
+        <section class="home-section">
+          <div class="text">
+            <h1> Staff Lists</h1>
+          </div>
+        <!-- Details -->
+        <section id="details" class="detail-section py-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-3 py-3">
+                <div class="card">
+                  <div class="card-body d-inline-flex">
+                    <button class="bg-primary p-3 rounded btn">
+                      <img src="../img/staff/doctor.png"  />
+                    </button> 
+                    <div class="g-1 px-3 pt-3">
+                      <h5 class="text-dash text-dark">500</h5>
+                      <p class="text-muted">Appointment</p>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 py-3">
+                <div class="card">
+                  <div class="card-body d-inline-flex">
+                    <button class="bg-secondary p-3 rounded btn">
+                      <img src="../img/staff/lab.png" />
+                    </button>
+                    <div class="g-1 px-3 pt-3">
+                      <h5 class="text-dash text-dark">53</h5>
+                      <p class="text-muted">Operations</p>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 py-3">
+                <div class="card">
+                  <div class="card-body d-inline-flex">
+                    <button class="bg-danger p-3 rounded btn">
+                      <img src="../img/staff/nurse.png" />
+                    </button>
+                    <div class="g-1 px-3 pt-3">
+                      <h5 class="text-dash text-dark">150</h5>
+                      <p class="text-muted">Patients</p>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 py-3">
+                <div class="card">
+                  <div class="card-body d-inline-flex">
+                    <button class="bg-success p-3 rounded btn">
+                      <img src="../img/staff/receptionist.png" />
+                    </button>
+                    <div class="g-1 px-3 pt-3">
+                      <h5 class="text-dash text-dark">₹10,500</h5>
+                      <p class="text-muted">Earning</p>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Appoinment Survey list -->
+  
+        <section class="table-list py-3">
+          <div class="container">
+            <div class="card container">
+              <div>
+                <h4 class="text float-start">Staff List</h4>
+                <a href="add.html" class="btn btn-outline-light text-dark btn-sm float-end m-3">
+                  <i class="bx bx-plus"></i>
+                </a>
+              </div>
+              <table class="table py-3">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Mobile Number</th>
+                    <th scope="col">Type</th>
+                    <th scope="col" class="text-center">Contact Number</th>
+                    <th scope="col" class="text-center">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="col">01</th>
+                    <th scope="col">Shivam Gupta</th>
+                    <th scope="col">19-06-2022 </th>
+                    <th scope="col">Viral Fever</th>
+                    <th scope="col" class="text-center">121</th>
+                    <td class="text-center">
+                      <a href="update.html" type="submit" class=" btn btn-warning btn-sm">
+                        <i class='bx bxs-edit' ></i>
+                      </a>
+                      <a href="view.html" type="submit" class=" btn btn-info btn-sm">
+                        <img src="../img/staff/eye.png" alt="">
+                      </a>
+                      <form action="delete" method="POST" class="d-inline">
+                        <button type="submit" class="btn btn-danger btn-sm"><i class='bx bxs-minus-circle'></i></button>
+                      </form>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="col">02</th>
+                    <th scope="col">Nimisha Joshi</th>
+                    <th scope="col">19-06-2022 </th>
+                    <th scope="col">Viral Fever</th>
+                    <th scope="col" class="text-center">122</th>
+                    <td class="text-center">
+                      <a href="update.html" type="submit" class=" btn btn-warning btn-sm">
+                        <i class='bx bxs-edit' ></i>
+                      </a>
+                      <a href="view.html" type="submit" class=" btn btn-info btn-sm">
+                        <img src="../img/staff/eye.png" alt="">
+                      </a>
+                      <form action="delete" method="POST" class="d-inline">
+                        <button type="submit" class="btn btn-danger btn-sm"><i class='bx bxs-minus-circle'></i></button>
+                      </form>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="col">03</th>
+                    <th scope="col">Prashant Gupta</th>
+                    <th scope="col">19-06-2022 </th>
+                    <th scope="col">Viral Fever</th>
+                    <th scope="col" class="text-center">100</th>
+                    <td class="text-center">
+                      <a href="update.html" type="submit" class=" btn btn-warning btn-sm">
+                        <i class='bx bxs-edit' ></i>
+                      </a>
+                      <a href="view.html" type="submit" class=" btn btn-info btn-sm">
+                        <img src="../img/staff/eye.png" alt="">
+                      </a>
+                      <form action="delete" method="POST" class="d-inline">
+                        <button type="submit" class="btn btn-danger btn-sm"><i class='bx bxs-minus-circle'></i></button>
+                      </form>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+  
+  
+      </section>
+  <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript">
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+      
+        closeBtn.addEventListener("click", ()=>{
+          sidebar.classList.toggle("open");
+          menuBtnChange();//calling the function(optional)
+        });
+      
+        searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+          sidebar.classList.toggle("open");
+          menuBtnChange(); //calling the function(optional)
+        });
+      
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+         if(sidebar.classList.contains("open")){
+           closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+         }else {
+           closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+         }
+        }
+    </script>
+  </body>
+</html>
